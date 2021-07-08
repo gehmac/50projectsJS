@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin: 0;
+    color: white;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pw-container{
+    background-color: rgb(63, 16, 109);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
+    min-width: 400px;
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw{
+    background-color: rebeccapurple;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    padding: 1rem;
+}
+
+.pw button{
+    background-color: white;
+    font-size: 0.75rem;
+    border: none;
+    color: rgb(37, 10, 63);
+    cursor: pointer;
+    font-weight:500;
+    padding: 0.1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, -20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw:active button{
+    background-color: rgb(38, 0, 79);
+    color: white;
+    transform: translateY(0.5px)
+}
+
+.pw-body{
+    padding:  0 1rem 1rem;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+input#len{
+    display: flex;
+    width: 5rem;
+}
